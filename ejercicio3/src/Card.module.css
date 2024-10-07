@@ -1,0 +1,122 @@
+    /* Contenedor principal que centrará la tarjeta */
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Para que ocupe toda la pantalla */
+        background-color: #f0f4f8; /* Un color de fondo opcional */
+    }
+    
+    /* Estilos de la tarjeta, ya definidos anteriormente */
+    .card {
+        background-color: #c68fe6;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .productName {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    .buyButton {
+        background-color: #6a0dad;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .buyButton:hover {
+        background-color: #4b0082;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+    
+    .modal.show {
+        display: flex;
+    }
+    
+    .modalContent {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        position: relative;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    @keyframes fadeIn {
+        from {
+        opacity: 0;
+        transform: translateY(50px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    }
+    
+    .closeButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #333;
+    }
+    
+    .closeButton:hover {
+        color: #7a1cac;
+    }
+    
+    .modalImage {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .payButton {
+        background-color: #2e073f;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    
+    .payButton:hover {
+        background-color: #7a1cac;
+    }
+    
