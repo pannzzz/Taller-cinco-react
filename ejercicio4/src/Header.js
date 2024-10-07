@@ -8,7 +8,7 @@
         <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
             <div className="text-2xl font-bold">
-            MyWebsite
+            Menu pan
             </div>
 
             {/* Menú de navegación */}
